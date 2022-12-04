@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  KakaoSdk.init(
+    nativeAppKey: '24b44d44dd618c36734c484693ff74e7',
+  );
   runApp(const MyApp());
 }
 
