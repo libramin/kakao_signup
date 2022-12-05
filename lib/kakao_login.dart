@@ -30,6 +30,7 @@ class KakaoLogin implements SocialLogin {
   Future<bool> logout() async {
     try {
       await UserApi.instance.unlink();
+
       return true;
     } catch (e) {
       return false;
